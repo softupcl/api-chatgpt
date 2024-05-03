@@ -28,11 +28,13 @@ jobs:
         
     - name: Build docker image
       run: |
-        docker build -t lurzua/api-thomia:0.0.1 .
+        docker build -t lurzua/api-thomia:0.0.2 .
+        docker build -t lurzua/api-thomia:latest .
 
     - name: Push docker image
       run: |
-         docker push lurzua/api-thomia:0.0.1
+         docker push lurzua/api-thomia:0.0.2
+         docker push lurzua/api-thomia:latest
         
          
      
