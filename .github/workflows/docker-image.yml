@@ -32,7 +32,7 @@ jobs:
 
     - name: Push docker image
       run: |
-         docker push -a lurzua/api-thomia:0.0.1
+         docker push lurzua/api-thomia:0.0.1
         
          
      
